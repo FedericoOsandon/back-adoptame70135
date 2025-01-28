@@ -11,7 +11,7 @@ dotenv.config({
 console.log(process.env.PORT)
 
 const configObject = {
-    port: process.env.PORT || 8080,
+    port: process.env.PORT || 8080, //  se lo dejamos que eliga el web server
     mongo_url: process.env.MONGO_URL
 }
 
