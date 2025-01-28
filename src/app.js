@@ -51,8 +51,5 @@ const serverListen = () => {
     return app.listen(PORT,()=> logger.info(`Listening on ${PORT}`))
 
 }
-// module.exports = {
-//     serverListen
-// }
 
 serverListen()
