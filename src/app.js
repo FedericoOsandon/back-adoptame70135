@@ -25,6 +25,7 @@ const connection = mongoose.connect(mongo_url)
 
 /* The lines `app.use(express.json())`, `app.use(cookieParser())`, `app.use(cors())`, and
 `app.use(addLogger)` are setting up middleware functions in an Express.js application. */
+app.use(express.static('./public'))
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors())
@@ -53,3 +54,8 @@ const serverListen = () => {
 }
 
 serverListen()
+
+
+// variables de entorno -> render
+// script package.json 
+// puerto
